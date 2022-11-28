@@ -16,12 +16,13 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginHorizontal="20dp"
         android:text="new +"
         android:textAlignment="center"
         tools:ignore="RtlCompat"

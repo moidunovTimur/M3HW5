@@ -17,12 +17,13 @@ public class ChatViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
         chatImageView = itemView.findViewById(R.id.chat_iv);
         chatTitleTextView = itemView.findViewById(R.id.title_tv);
-        chatTitleTextView = itemView.findViewById(R.id.message_tv);
+        chatMessageTextView = itemView.findViewById(R.id.message_tv);
     }
 
-    public void bind(int image, String title, String message) {
-        chatImageView.setImageResource(image);
-        chatTitleTextView.setText(title);
-        chatMessageTextView.setText(message);
+
+    public void bind(ChatModel chatModel) {
+        chatImageView.setImageResource(chatModel.image);
+        chatTitleTextView.setText(chatModel.title);
+        chatMessageTextView.setText(chatModel.message);
     }
 }
